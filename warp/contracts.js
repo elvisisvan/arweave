@@ -13,7 +13,6 @@ export function handle(state, action) {
         posts[posttoUpdate.id] = posttoUpdate
         state.posts = posts
     }
-    }
     if(action.input.function === 'deletePost' && action.caller === state.author) {
         const posts = state.posts
         delete posts[action.input.post.id]
